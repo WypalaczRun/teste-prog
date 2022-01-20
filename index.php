@@ -37,10 +37,10 @@ $linguica->setExpireDate($dateNow);
 $linguica->setName("Linguiça");
 $mineira->addIngredient($linguica);
 
-
 echo $mineira;
 
 echo "<br><br>";
+
 $chinesa = new Cozinha();
 $chinesa->setKitchenName("Cozinha Chinesa");
 $chinesa->setMainFood("Yakissoba");
@@ -69,7 +69,6 @@ $carne = new Ingrediente();
 $carne->setExpireDate($dateNow);
 $carne->setName("Carne");
 $chinesa->addIngredient($carne);
-
 
 echo $chinesa;
 ?>
