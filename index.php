@@ -1,13 +1,11 @@
 <?php
 
-require_once ('class/class.cozinha.php');
-require_once ('class/class.ingrediente.php');
+require_once('class/Cozinha.php');
+require_once('class/Ingrediente.php');
 
-$mineira = new Cozinha();
-$mineira->createKitchen("Cozinha Mineira", "Feijoada", 14, 20);
+$mineira = new Cozinha("Cozinha Mineira", "Feijoada", 14, 20);
 
 $dateNow = new DateTime('NOW');
-$dateNow->format('Y-m-d H:i:s');
 
 $feijao = new Ingrediente();
 $feijao->setExpireDate($dateNow);
@@ -38,8 +36,7 @@ echo $mineira;
 
 echo "<br><br>";
 
-$chinesa = new Cozinha();
-$chinesa->createKitchen("Cozinha Chinesa", "Yakissoba", 10, 23);
+$chinesa = new Cozinha("Cozinha Chinesa", "Yakissoba", 10, 23);
 
 $dateNow = new DateTime('NOW');
 $dateNow->format('Y-m-d H:i:s');

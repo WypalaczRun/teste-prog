@@ -8,8 +8,15 @@ class Cozinha {
     private string $mainFood;
     public array $ingredients;
 
+    public function __construct(string $kitchenName, string $mainFood, int $timeOpen, int $timeClose) {
+        $this->setKitchenName($kitchenName);
+        $this->setMainFood($mainFood);
+        $this->setTimeOpen($timeOpen);
+        $this->setTimeClose($timeClose);
+    }
+
     public function setTimeOpen(int $time): void {
-      $this->timeOpen = $time;
+        $this->timeOpen = $time;
     }
   
     public function getTimeOpen(): int {
@@ -20,7 +27,7 @@ class Cozinha {
         $this->timeClose = $time;
     }
     
-      public function getTimeClose(): int {
+    public function getTimeClose(): int {
         return $this->timeClose;
     }
 
@@ -39,6 +46,12 @@ class Cozinha {
     public function getMainFood(): string {
         return $this->mainFood;
     }
+
+    public function countAllIngredients(): int {
+        $arrLength = count($this->ingredients);
+
+        return $arrLength;
+    }
     public function getAllIngredients(): string {
         $ingredients = "";
         foreach ($this->ingredients as $ingredient) {
@@ -46,6 +59,7 @@ class Cozinha {
         }
         return $ingredients;
     }
+
     public function createKitchen($kitchenName, $mainFood, $timeOpen, $timeClose): void {
         $this->kitchenName = $kitchenName;
         $this->mainFood = $mainFood;
@@ -57,7 +71,7 @@ class Cozinha {
     }
 
     public function __toString(): string {
-        return "Nome da Cozinha: " . $this->kitchenName . "<br>Horario de Abertura: " . $this->timeOpen . "<br> Horario de Fechamento: " . $this->timeClose . "<br>Prato Principal: " . $this->mainFood . "<br> Ingredientes: " . $this->getAllIngredients();
+        return "Nome da Cozinha: " . $this->kitchenName . "<br>Horario de Abertura: " . $this->timeOpen . "<br> Horario de Fechamento: " . $this->timeClose . "<br>Prato Principal: " . $this->mainFood . "<br>Total de Ingredientes: " . $this->countAllIngredients() . "<br> Ingredientes: " . $this->getAllIngredients();
     }
     
 }

@@ -10,8 +10,7 @@ class Ingrediente {
         $this->expireDate = $expireDate;
     }
 
-    public function getExpireDate(): DateTime
-    {
+    public function getExpireDate(): DateTime {
         return $this->expireDate;
     }
 
@@ -19,8 +18,7 @@ class Ingrediente {
         $this->name = $name;
     }
 
-    public function getName(): string
-    {
+    public function getName(): string {
         return $this->name;
     }
 
