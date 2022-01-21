@@ -22,6 +22,10 @@ $mineira->addIngredient($carneporco);
 $linguica = new Ingrediente("Linguiça", new DateTime('2025-07-12'));
 $mineira->addIngredient($linguica);
 
+// you can add multiple ingredients at once too if you want
+// $ingredients = array($feijao, $farinha, $arroz, $carneporco, $linguica);
+// $mineira->addIngredients($ingredients);
+
 echo $mineira;
 
 echo "<br><br>";
@@ -39,6 +43,10 @@ $chinesa->addIngredient($macarrao);
 
 $carne = new Ingrediente("Carne", new DateTime('2022-10-17'));
 $chinesa->addIngredient($carne);
+
+// you can add multiple ingredients at once too if you want
+// $ingredients = array($champignon, $brocolis, $macarrao, $carne);
+// chinesa->addIngredients($ingredients);
 
 echo $chinesa;
 ?>
