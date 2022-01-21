@@ -28,7 +28,7 @@ $mineira->addIngredient($linguica);
 
 echo $mineira;
 
-echo "<br><br>";
+echo "<br>";
 
 $chinesa = new Cozinha("Cozinha Chinesa", "Yakissoba", 10, 23);
 
@@ -46,7 +46,7 @@ $chinesa->addIngredient($carne);
 
 // you can add multiple ingredients at once too if you want
 // $ingredients = array($champignon, $brocolis, $macarrao, $carne);
-// chinesa->addIngredients($ingredients);
+// $chinesa->addIngredients($ingredients);
 
 echo $chinesa;
 ?>

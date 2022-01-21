@@ -2,8 +2,6 @@
 
 namespace Restaurante;
 
-use Restaurante\Ingrediente;
-
 class Cozinha {
 
     private int $timeOpen;
