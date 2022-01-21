@@ -1,0 +1,10 @@
+{
+    "name": "kitchen/teste",
+    "authors": [
+        {
+            "name": "Wypalacz",
+            "email": "wypalaczrun@gmail.com"
+        }
+    ],
+    "require": {}
+}

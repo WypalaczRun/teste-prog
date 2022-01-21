@@ -6,6 +6,10 @@ class Ingrediente {
     public DateTime $expireDate;
     public string $name;
 
+    public function __construct(string $name, DateTime $expireDate) {
+        $this->setName($name);
+        $this->setExpireDate($expireDate);
+    }
     public function setExpireDate(DateTime $expireDate) {
         $this->expireDate = $expireDate;
     }

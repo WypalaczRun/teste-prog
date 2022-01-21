@@ -5,31 +5,19 @@ require_once('class/Ingrediente.php');
 
 $mineira = new Cozinha("Cozinha Mineira", "Feijoada", 14, 20);
 
-$dateNow = new DateTime('NOW');
-
-$feijao = new Ingrediente();
-$feijao->setExpireDate($dateNow);
-$feijao->setName("Feijão");
+$feijao = new Ingrediente("Feijao", new DateTime('2023-08-23'));
 $mineira->addIngredient($feijao);
 
-$farinha = new Ingrediente();
-$farinha->setExpireDate($dateNow);
-$farinha->setName("Farinha");
+$farinha = new Ingrediente("Farinha", new DateTime('2022-12-15'));
 $mineira->addIngredient($farinha);
 
-$arroz = new Ingrediente();
-$arroz->setExpireDate($dateNow);
-$arroz->setName("Arroz");
+$arroz = new Ingrediente("Arroz", new DateTime('2024-06-09'));
 $mineira->addIngredient($arroz);
 
-$carneporco = new Ingrediente();
-$carneporco->setExpireDate($dateNow);
-$carneporco->setName("Carne de Porco");
+$carneporco = new Ingrediente("Carne de Porco", new DateTime('2022-03-29'));
 $mineira->addIngredient($carneporco);
 
-$linguica = new Ingrediente();
-$linguica->setExpireDate($dateNow);
-$linguica->setName("Linguiça");
+$linguica = new Ingrediente("Linguiça", new DateTime('2025-07-12'));
 $mineira->addIngredient($linguica);
 
 echo $mineira;
@@ -38,24 +26,16 @@ echo "<br><br>";
 
 $chinesa = new Cozinha("Cozinha Chinesa", "Yakissoba", 10, 23);
 
-$champignon = new Ingrediente();
-$champignon->setExpireDate($dateNow);
-$champignon->setName("Champignon");
+$champignon = new Ingrediente("Champignon", new DateTime('2023-01-12'));
 $chinesa->addIngredient($champignon);
 
-$brocolis = new Ingrediente();
-$brocolis->setExpireDate($dateNow);
-$brocolis->setName("Brocolis");
+$brocolis = new Ingrediente("Brocolis", new DateTime('2023-05-08'));
 $chinesa->addIngredient($brocolis);
 
-$macarrao = new Ingrediente();
-$macarrao->setExpireDate($dateNow);
-$macarrao->setName("Macarrao");
+$macarrao = new Ingrediente("Macarrão", new DateTime('2025-05-05'));
 $chinesa->addIngredient($macarrao);
 
-$carne = new Ingrediente();
-$carne->setExpireDate($dateNow);
-$carne->setName("Carne");
+$carne = new Ingrediente("Carne", new DateTime('2022-10-17'));
 $chinesa->addIngredient($carne);
 
 echo $chinesa;
