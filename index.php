@@ -38,9 +38,6 @@ echo "<br><br>";
 
 $chinesa = new Cozinha("Cozinha Chinesa", "Yakissoba", 10, 23);
 
-$dateNow = new DateTime('NOW');
-$dateNow->format('Y-m-d H:i:s');
-
 $champignon = new Ingrediente();
 $champignon->setExpireDate($dateNow);
 $champignon->setName("Champignon");
