@@ -6,6 +6,8 @@ Fiz em PHP devido as tecnologias utilizadas na empresa, pensei em usar Laravel/L
 
 Pelo fato do teste ser bem definido não consegui imaginar muitas coisas para fazer melhor, tentei ao maximo seguir as diretrizes PSR-12
 
+Adicionei tambem o Composer para facilitar o autoload das classes.
+
 Mantive diversos métodos que não foram utilizados pra caso sejam necessario no teste ou até mesmo em futuras modificações que eu fizer.
 
 
