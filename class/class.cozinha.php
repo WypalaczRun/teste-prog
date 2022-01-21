@@ -8,7 +8,7 @@ class Cozinha {
     private string $mainFood;
     public array $ingredients;
 
-    public function setTimeOpen(int $time) {
+    public function setTimeOpen(int $time): void {
       $this->timeOpen = $time;
     }
   
@@ -16,7 +16,7 @@ class Cozinha {
         return $this->timeOpen;
     }
 
-    public function setTimeClose(int $time) {
+    public function setTimeClose(int $time): void {
         $this->timeClose = $time;
     }
     
@@ -24,7 +24,7 @@ class Cozinha {
         return $this->timeClose;
     }
 
-    public function setKitchenName(string $kitchenName) {
+    public function setKitchenName(string $kitchenName): void {
         $this->kitchenName = $kitchenName;
     }
     
@@ -32,7 +32,7 @@ class Cozinha {
         return $this->kitchenName;
     }
 
-    public function setMainFood(string $mainFood) {
+    public function setMainFood(string $mainFood): void {
         $this->mainFood = $mainFood;
     }
     
@@ -46,11 +46,17 @@ class Cozinha {
         }
         return $ingredients;
     }
-    public function addIngredient(Ingrediente $ingredient) {
+    public function createKitchen($kitchenName, $mainFood, $timeOpen, $timeClose): void {
+        $this->kitchenName = $kitchenName;
+        $this->mainFood = $mainFood;
+        $this->timeOpen = $timeOpen;
+        $this->timeClose = $timeClose;
+    }
+    public function addIngredient(Ingrediente $ingredient): void {
         $this->ingredients[] = $ingredient;
     }
 
-    public function __toString() {
+    public function __toString(): string {
         return "Nome da Cozinha: " . $this->kitchenName . "<br>Horario de Abertura: " . $this->timeOpen . "<br> Horario de Fechamento: " . $this->timeClose . "<br>Prato Principal: " . $this->mainFood . "<br> Ingredientes: " . $this->getAllIngredients();
     }
     

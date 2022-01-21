@@ -4,10 +4,7 @@ require_once ('class/class.cozinha.php');
 require_once ('class/class.ingrediente.php');
 
 $mineira = new Cozinha();
-$mineira->setKitchenName("Cozinha Mineira");
-$mineira->setMainFood("Feijoada");
-$mineira->setTimeOpen(14);
-$mineira->setTimeClose(20);
+$mineira->createKitchen("Cozinha Mineira", "Feijoada", 14, 20);
 
 $dateNow = new DateTime('NOW');
 $dateNow->format('Y-m-d H:i:s');
@@ -42,10 +39,7 @@ echo $mineira;
 echo "<br><br>";
 
 $chinesa = new Cozinha();
-$chinesa->setKitchenName("Cozinha Chinesa");
-$chinesa->setMainFood("Yakissoba");
-$chinesa->setTimeOpen(10);
-$chinesa->setTimeClose(23);
+$chinesa->createKitchen("Cozinha Chinesa", "Yakissoba", 10, 23);
 
 $dateNow = new DateTime('NOW');
 $dateNow->format('Y-m-d H:i:s');
