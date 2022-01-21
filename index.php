@@ -1,7 +1,9 @@
 <?php
 
-require_once('class/Cozinha.php');
-require_once('class/Ingrediente.php');
+require __DIR__ . '/vendor/autoload.php';
+
+use Cozinha\Cozinha;
+use Ingrediente\Ingrediente;
 
 $mineira = new Cozinha("Cozinha Mineira", "Feijoada", 14, 20);
 

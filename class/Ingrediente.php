@@ -1,5 +1,8 @@
 <?php
 
+namespace Ingrediente;
+
+use DateTime;
 
 class Ingrediente {
 
@@ -10,7 +13,7 @@ class Ingrediente {
         $this->setName($name);
         $this->setExpireDate($expireDate);
     }
-    public function setExpireDate(DateTime $expireDate) {
+    public function setExpireDate(DateTime $expireDate): void {
         $this->expireDate = $expireDate;
     }
 

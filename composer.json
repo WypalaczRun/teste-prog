@@ -6,5 +6,11 @@
             "email": "wypalaczrun@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Cozinha\\": "class/",
+            "Ingrediente\\": "class/"
+        }
+    },
+        "require": {}
 }

@@ -1,5 +1,9 @@
 <?php
 
+namespace Cozinha;
+
+use Ingrediente\Ingrediente;
+
 class Cozinha {
 
     private int $timeOpen;
