@@ -2,8 +2,8 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Cozinha\Cozinha;
-use Ingrediente\Ingrediente;
+use Restaurante\Cozinha;
+use Restaurante\Ingrediente;
 
 $mineira = new Cozinha("Cozinha Mineira", "Feijoada", 14, 20);
 

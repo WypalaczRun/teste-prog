@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Ingrediente\\' => array($baseDir . '/class'),
-    'Cozinha\\' => array($baseDir . '/class'),
+    'Restaurante\\' => array($baseDir . '/class'),
 );

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ingrediente;
+namespace Restaurante;
 
 use DateTime;
 

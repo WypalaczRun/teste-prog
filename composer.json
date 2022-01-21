@@ -8,8 +8,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Cozinha\\": "class/",
-            "Ingrediente\\": "class/"
+            "Restaurante\\": "class/"
         }
     },
         "require": {}

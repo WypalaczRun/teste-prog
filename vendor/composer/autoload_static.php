@@ -7,22 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit89a46e8f30b6581538394978904c3f66
 {
     public static $prefixLengthsPsr4 = array (
-        'I' => 
+        'R' => 
         array (
-            'Ingrediente\\' => 12,
-        ),
-        'C' => 
-        array (
-            'Cozinha\\' => 8,
+            'Restaurante\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Ingrediente\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/class',
-        ),
-        'Cozinha\\' => 
+        'Restaurante\\' => 
         array (
             0 => __DIR__ . '/../..' . '/class',
         ),
@@ -30,8 +22,8 @@ class ComposerStaticInit89a46e8f30b6581538394978904c3f66
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Cozinha\\Cozinha' => __DIR__ . '/../..' . '/class/Cozinha.php',
-        'Ingrediente\\Ingrediente' => __DIR__ . '/../..' . '/class/Ingrediente.php',
+        'Restaurante\\Cozinha' => __DIR__ . '/../..' . '/class/Cozinha.php',
+        'Restaurante\\Ingrediente' => __DIR__ . '/../..' . '/class/Ingrediente.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

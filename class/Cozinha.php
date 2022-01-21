@@ -1,8 +1,8 @@
 <?php
 
-namespace Cozinha;
+namespace Restaurante;
 
-use Ingrediente\Ingrediente;
+use Restaurante\Ingrediente;
 
 class Cozinha {
 
