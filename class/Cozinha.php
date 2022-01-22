@@ -57,7 +57,7 @@ class Cozinha {
     public function getAllIngredients(): string {
         $ingredients = "";
         foreach ($this->ingredients as $ingredient) {
-            $ingredients .= " - " . $ingredient->getName() . "<br> ";
+            $ingredients .= " - " . $ingredient->getName() . " (Data de Validade: " . $ingredient->getExpireDate()->format('Y-m-d H:i:s').")<br> ";
         }
         return $ingredients;
     }
