@@ -54,6 +54,7 @@ class Cozinha {
 
         return $arrLength;
     }
+
     public function getAllIngredients(): string {
         $ingredients = "";
         foreach ($this->ingredients as $ingredient) {
@@ -78,7 +79,6 @@ class Cozinha {
             $this->addIngredient($ingredient);
         }
     }
-
 
     public function __toString(): string {
         return "Nome da Cozinha: " . $this->kitchenName . "<br>Horario de Abertura: " . $this->timeOpen . "<br> Horario de Fechamento: " . $this->timeClose . "<br>Prato Principal: " . $this->mainFood . "<br>Total de Ingredientes: " . $this->countAllIngredients() . "<br> Ingredientes: " . $this->getAllIngredients();
