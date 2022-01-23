@@ -68,13 +68,14 @@ class Cozinha {
         $this->timeOpen = $timeOpen;
         $this->timeClose = $timeClose;
     }
+
     public function addIngredient(Ingrediente $ingredient): void {
         $this->ingredients[] = $ingredient;
     }
 
     public function addIngredients(array $ingredients): void {
         foreach($ingredients as $ingredient) {
-            $this->ingredients[] = $ingredient;
+            $this->addIngredient($ingredient);
         }
     }
 

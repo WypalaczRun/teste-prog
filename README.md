@@ -8,6 +8,6 @@ Pelo fato do teste ser bem definido não consegui imaginar muitas coisas para fa
 
 Adicionei tambem o Composer para facilitar o autoload das classes.
 
-Mantive diversos métodos que não foram utilizados pra caso sejam necessario no teste ou até mesmo em futuras modificações que eu fizer.
+Mantive diversos métodos que não foram utilizados pra caso sejam necessarios no teste ou até mesmo em futuras modificações que eu fizer.
 
 
