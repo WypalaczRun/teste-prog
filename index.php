@@ -49,4 +49,3 @@ $chinesa->addIngredient($carne);
 // $chinesa->addIngredients($ingredients);
 
 echo $chinesa;
-?>
